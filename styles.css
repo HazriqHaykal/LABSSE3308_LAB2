@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F1E4;
+  font-family: 'Poppins', sans-serif;
+  color: #5c4033;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 6%;
+  background-color: #F8F1E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(92, 64, 51, 0.15);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.2rem;
+  color: #5c4033;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+
+
+nav a {
+  font-size: 1.4rem;
+  color: #5c4033;
+  margin-left: 2.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #372b13;
+  font-weight: 600;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  flex: 1;;
+}
+
+/* Paragraphs */
+p, body.homepage p {
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #5c4033;
+  color: #F8F1E4;
+  padding: 15px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* About Section */
+.about {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #FFF8F0;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(92, 64, 51, 0.1);
+  line-height: 1.8;
+  animation: fadeIn 1s ease-in;
+}
+
+.about h3 {
+  font-size: 2em;
+  color: #5c4033;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 1.05em;
+  text-align: justify;
+}
+
+.about em {
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+}
+
+.about:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(92, 64, 51, 0.3);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Table */
+table {
+  margin-top: 40px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #FFF8F0;
+  box-shadow: 0 10px 25px rgba(92, 64, 51, 0.1); /* Fixed here */
+  border-radius: 9px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #DDD;
+  text-align: left;
+}
+
+th {
+  background-color: #ebe8e8;
+  color: #372b13;
+}
+
+td {
+  background-color: #FFF8F0;
+}
+
+tr:hover td {
+  background-color: #EDE0D4;
+}
+
+/* Life Section */
+.life-section {
+  text-align: center;
+  margin-top: 40px;
+  width: 80%;
+}
+
+.life-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(92, 64, 51, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.life-item img {
+  width: 40%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+.life-item p {
+  width: 50%;
+  font-size: 18px;
+  color: #5c4033;
+  text-align: justify;
+}
+
+.life-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.future img {
+  border-radius: 20px;
+}
+
+/* Skills and Education */
+.future {
+  background: linear-gradient(135deg, #F8F1E4 0%, #fff 100%);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(92, 64, 51, 0.2);
+  color: #5c4033;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.future:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(92, 64, 51, 0.3);
+}
+
+.future h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #4a2f1e;
+}
+
+.future p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Entry Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .life-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .life-item img, .life-item p {
+    width: 100%;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about h3 {
+    font-size: 1.5em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+}
